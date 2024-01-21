@@ -1,0 +1,48 @@
+<div class="bg-body dark:bg-darkmode-body">
+  {{ range .Resources }}
+  {{ if eq .ResourceType "video" }}
+      <video controls autoplay src="{{ .RelPermalink }}">Your browser does not support the video tag.</video>
+  {{ else if eq .ResourceType "image" }}
+      <img src="{{ .RelPermalink }}" alt="Blog Image">
+  {{ end }}
+  {{ end }}
+  <h4 class="mb-3">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h4>
+  <ul class="mb-4">
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-circle-user mr-2"></i>
+      {{ $authors:= .Params.authors }}
+      {{ range $i,$p:= $authors }}
+        {{ if ne $i 0 }}
+          {{ ", " }}
+        {{ end }}
+        <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
+          {{ . }}
+        </a>
+      {{ end }}
+      {{/*  <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+        <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
+      </a>  */}}
+    </li>
+    <li class="mr-4 inline-block">
+      <i class="fa-regular fa-folder mr-2"></i>
+      {{ $categories:= .Params.categories }}
+      {{ range $i,$p:= $categories }}
+        <a
+          href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+          class="ms-1"
+          >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+            {{ ", " }}
+          {{ end }}
+        </a>
+      {{ end }}
+    </li>
+  </ul>
+  <p class="mb-6">{{ .Summary }}</p>
+  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
+    {{ i18n "read_more" }}
+  </a>
+</div>
