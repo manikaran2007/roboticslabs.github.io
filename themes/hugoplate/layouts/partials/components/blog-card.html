@@ -3,7 +3,7 @@
   {{ if eq .ResourceType "video" }}
       <video controls autoplay src="{{ .RelPermalink }}">Your browser does not support the video tag.</video>
   {{ else if eq .ResourceType "image" }}
-      <img src="{{ .RelPermalink }}" alt="Blog Image">
+      {{/*  <img src="{{ .RelPermalink }}" alt="Blog Image">  */}}
   {{ end }}
   {{ end }}
   <h4 class="mb-3">
