@@ -6,10 +6,19 @@
   @apply rounded-sm px-4 py-1.5 text-sm;
 }
 
+.btn-sm-rd {
+  @apply rounded-full px-4 py-1.5 text-sm;
+}
+
 .btn-primary {
-  @apply border-primary bg-primary dark:border-darkmode-primary dark:text-dark text-white dark:bg-white;
+  background-color: #76b900;
+  @apply text-dark hover:bg-nv-light-green;
+}
+.btn-grey {
+  @apply border-gray-300 bg-gray-300 dark:border-black dark:text-white text-dark dark:bg-black;
 }
 
 .btn-outline-primary {
-  @apply border-dark text-dark hover:bg-dark dark:hover:text-dark bg-transparent hover:text-white dark:border-white dark:text-white dark:hover:bg-white;
+  background-color: #76b900;
+  @apply text-dark hover:bg-nv-light-green;
 }

@@ -1,10 +1,23 @@
 {{ define "main" }}
 <section class="section pt-0">
-  <div class="bg-gray-200 dark:bg-darkmode-theme-light">
-    <div class="max-w-screen-xl px-8 py-8 mx-auto mb-6">
-      {{/*  <div class="grid items-center gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12">
-        <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">  */}}
-            <h1 class="mb-4 font-medium leading-tight text-gray-900 md:text-5xl xl:text-6xl dark:text-white pt-6">
+  <div class="bg-gray-200 dark:bg-darkmode-theme-light pt-12">
+    <div class="max-w-screen-2xl px-12 py-12 mx-auto mb-6">
+      <div class="grid gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12 pt-12">
+        <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+          <li class="mr-4 inline-block">
+            {{/*  <i class="fa-regular fa-folder mr-1"></i>  */}}
+            {{ $categories:= .Params.categories }}
+            {{ range $i,$p:= $categories }}
+              <a
+                href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
+                class="ms-2 btn-sm-rd btn-grey"
+                >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
+                  {{/*  {{ ", " }}  */}}
+                {{ end }}
+              </a>
+            {{ end }}
+          </li>
+            <h1 class="mb-4 font-bold leading-tight text-gray-900 md:text-4xl xl:text-5xl 2xl:text-6xl dark:text-white pt-4">
                 {{ .Title }}
             </h1>
             {{/*  <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
@@ -24,66 +37,91 @@
                 {{ end }}
               </li>
               <li class="mr-4 inline-block">
-                <i class="fa-regular fa-folder mr-1"></i>
-                {{ $categories:= .Params.categories }}
-                {{ range $i,$p:= $categories }}
-                  <a
-                    href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-                    class="ms-1"
-                    >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-                      {{ ", " }}
-                    {{ end }}
-                  </a>
-                {{ end }}
-              </li>
-              <li class="mr-4 inline-block">
                 <i class="fa-regular fa-clock mr-1"></i>
                 {{ time.Format ":date_long" .PublishDate }}
               </li>
             </ul>
-            <div class="column has-text-centered pt-2">
-              <ul class="social-icons">
-                {{ $arxiv:= .Params.arxiv}}
-                {{ if $arxiv }}
-                <a
-                  target="_blank"
-                  aria-label="arxiv"
-                  rel="nofollow noopener"
-                  href="{{ $arxiv }}">
-                  <i class="ai ai-arxiv">aaa</i>
-                {{ end }}
-              </ul>
-            </div>
 
 
-            <p class="mx-auto font-normal text-grey lg:mx-0 xl:mb-2 md:text-lg xl:text-xl dark:text-gray-50 pt-8" style="font-style: italic">
+            <p class="mx-auto font-normal text-grey lg:mx-0 mb-2 md:text-lg xl:text-xl 2xl:text-2xl dark:text-gray-50 pt-12" style="font-style: italic">
                 {{ .Description}}
             </p>
+            
+            <li class="inline-block mt-12">
+              {{ $arxiv:= .Params.arxiv}}
+              {{ if $arxiv }}
+              <a
+                target="_blank"
+                rel="nofollow noopener"
+                href="{{ $arxiv }}"
+                class="btn-sm-rd btn-grey mr-2 md:text-base xl:text-lg 2xl:text-xl">
+                <i class="ai ai-arxiv"></i>
+                <span>arXiv</span>
+              </a>
+              {{ end }}
+              {{ $pdf:= .Params.pdf}}
+              {{ if $pdf }}
+              <a
+                target="_blank"
+                rel="nofollow noopener"
+                href="{{ $pdf }}"
+                class="btn-sm-rd btn-grey mr-2 md:text-base xl:text-lg 2xl:text-xl">
+                <i class="fa-regular fa-file-pdf"></i>
+                <span>PDF</span>
+              </a>
+              {{ end }}
+              {{ $code:= .Params.code}}
+              {{ if $code }}
+              <a
+                target="_blank"
+                rel="nofollow noopener"
+                href="{{ $code }}"
+                class="btn-sm-rd btn-grey mr-2 md:text-base xl:text-lg 2xl:text-xl">
+                <i class="fa-brands fa-github"></i>
+                <span>Code</span>
+              </a>
+              {{ end }}
+              {{ $tweet:= .Params.tweet}}
+              {{ if $tweet }}
+              <a
+                target="_blank"
+                rel="nofollow noopener"
+                href="{{ $tweet }}"
+                class="btn-sm-rd btn-grey mr-2 md:text-base xl:text-lg 2xl:text-xl">
+                <i class="fa-brands fa-twitter"></i>
+                <span>Tweet</span>
+              </a>
+              {{ end }}
 
-        {{/*  </div>  */}}
+            </li>
+        </div>
         {{/*  {{ $image:= .Params.image }}
         {{ if $image }}
           <div class="col-span-6">
             {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
           </div>
         {{ end }}  */}}
-        {{/*  <div class="col-span-6">  */}}
-        <div class="pt-8">
+        <div class="col-span-6">
           {{ range .Resources }}
             {{ if eq .ResourceType "video" }}
-                <video controls autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>
+                {{/*  <video controls autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>  */}}
             {{ else if eq .ResourceType "image" }}
-                {{/*  <img src="{{ .RelPermalink }}" alt="Blog Image">  */}}
+                <img src="{{ .RelPermalink }}" alt="Blog Image" style="width: 100%; display: block;">
             {{ end }}
           {{ end }}
         </div>
       </div>
-    {{/*  </div>  */}}
+    </div>
   </div>
   <div class="container">
     <div class="row justify-center">
-      <article class="lg:col-10">
 
+      <article class="lg:col-10">
+        {{ range .Resources }}
+          {{ if eq .ResourceType "video" }}
+              <video controls autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>
+          {{ end }}
+        {{ end }}
         <div class="content mb-10">
           {{ .Content }}
         </div>
