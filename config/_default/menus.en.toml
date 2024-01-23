@@ -21,24 +21,24 @@ weight = 3
 # url = "elements/"
 # weight = 3
 
-[[main]]
-weight = 4
-name = "Pages"
-hasChildren = true
+# [[main]]
+# weight = 4
+# name = "Pages"
+# hasChildren = true
 
 
 [[main]]
-parent = "Pages"
+weight = 5
 name = "Contact"
 url = "contact/"
 
 [[main]]
-parent = "Pages"
+weight = 6
 name = "Authors"
 url = "authors/"
 
 [[main]]
-parent = "Pages"
+weight = 7
 name = "Categories"
 url = "categories/"
 

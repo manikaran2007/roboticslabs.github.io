@@ -9,7 +9,7 @@
       {{ .Title }}
     </a>
   </h4>
-  <ul class="mb-4">
+  {{/*  <ul class="mb-4">  */}}
     <li class="mr-4 inline-block">
       <i class="fa-regular fa-circle-user mr-2"></i>
       {{ $authors:= .Params.authors }}
@@ -38,7 +38,7 @@
         </a>
       {{ end }}
     </li>
-  </ul>
+  {{/*  </ul>  */}}
   <p class="mb-6">{{ .Summary }}</p>
   <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
     {{ i18n "read_more" }}
