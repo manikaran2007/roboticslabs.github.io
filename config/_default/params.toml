@@ -57,7 +57,7 @@ show_categories = true
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["Gear", "NVIDIA"]
-description = "GEAR: Generative Embodied Agents"
+description = "GEAR: Generalist Embodied Agent Research"
 author = "gear team"
 image = "images/og-image.png"
 
