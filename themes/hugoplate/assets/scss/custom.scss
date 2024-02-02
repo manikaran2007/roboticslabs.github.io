@@ -1,22 +1,6 @@
 // DO NOT WRITE ANY STYLE IN THIS FILE
 // If you want to add your own styles, please write it in the `./assets/scss/custom.scss` file.
-.homepage {
-    margin: 0;
-    padding: 0;
-    // background-image: url('/images/homepage.jpg'); /* Replace 'your-image.jpg' with the path to your image */
-    // background-size: cover;
-    background-position: center;
-    height: 70vh;
-    overflow: hidden;
-}
 
-.homepage_content {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
 .mission {
     // set text size to be large

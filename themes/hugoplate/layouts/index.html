@@ -1,4 +1,23 @@
 {{ define "main" }}
+<style>
+  .homepage {
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/homepage.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.homepage_content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+</style>
 <!-- Banner -->
 {{ with .Params.banner }}
 <section class="section homepage bg-gray-200 dark:bg-darkmode-body">
