@@ -71,4 +71,7 @@ main {
   .btn {
     @apply dark:hover:text-dark no-underline hover:text-white #{!important};
   }
+  p {
+    @apply text-xl;
+  }
 }

@@ -1,24 +1,24 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
-      <div class="container">
+    <section class="section homepage bg-gray-200 dark:bg-darkmode-body">
+      <div class="container homepage_content">
         <div class="row justify-center">
           <div class="lg:col-7 mb-8 text-center">
-            <h1 class="mb-4 pt-14">
+            <h1 class="mb-4 pt-14" style="font-size: 5rem;">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
+            <p class="mb-8" style="font-size: 1.5rem;">
               {{ .content | markdownify }}
             </p>
-            {{ with .button }}
+            {{/*  {{ with .button }}
               {{ if .enable }}
                 <a class="btn btn-primary" href="{{ .link | absURL }}">
                   {{ .label }}
                   <i class="fa fa-arrow-right pl-2"></i>
                 </a>
               {{ end }}
-            {{ end }}
+            {{ end }}  */}}
           </div>
           {{/*  <div class="col-12">
             {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" ) }}
@@ -72,7 +72,18 @@
     </section>
   {{ end }}  */}}
   <!-- /Features -->
-
+  <section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 pb-8">
+          <h3>Our Missions</h3>
+        </div>
+        <div class="col-6">
+        </div>
+        
+      </div>
+    </div>
+  </section>
   <!-- /Testimonials -->
   <section class="section-sm">
     <div class="container">

@@ -1,9 +1,9 @@
 {{ define "main" }}
 <section class="section pt-0">
-  <div class="bg-gray-200 dark:bg-darkmode-theme-light pt-12">
-    <div class="max-w-screen-2xl px-12 py-12 mx-auto mb-6">
-      <div class="grid gap-8 mb-8 sm:mb-0 lg:gap-12 lg:grid-cols-12 pt-12">
-        <div class="col-span-6 px-4 text-center sm:mb-6 lg:text-left lg:mb-0">
+  <div class="text-left bg-gray-200 dark:bg-darkmode-theme-light pt-12 pb-10 mb-20">
+    <div class="max-w-[1650px] mx-auto px-6 md:px-12 lg:px-16 xl:px-16 2xl:px-20">
+      <div class="grid gap-6 grid-cols-1 md:gap-6 md:grid-cols-5 lg:gap-8 lg:grid-cols-5 xl:gap-8 xl:grid-cols-5 2xl:gap-10 2xl:grid-cols-5">
+        <div class="md:col-start-1 md:col-span-3 md:pr-8 xl:pr-16">
           <li class="mr-4 inline-block">
             {{/*  <i class="fa-regular fa-folder mr-1"></i>  */}}
             {{ $categories:= .Params.categories }}
@@ -17,13 +17,15 @@
               </a>
             {{ end }}
           </li>
-            <h1 class="mb-4 font-bold leading-tight text-gray-900 md:text-4xl xl:text-5xl 2xl:text-6xl dark:text-white pt-4">
+            <h1 class="font-350 leading-tight text-gray-900 md:text-5xl xl:text-7xl dark:text-white pt-4 tracking-tighter 
+            text-4xl -ml-0.5 md:-ml-1 lg:text-7xl lg:-ml-1.5 lg:leading-[0.9em] xl:-ml-1.5 xl:leading-[0.9em] 
+            2xl:text-[5rem] 2xl:-ml-2 2xl:leading-[0.9em]">
                 {{ .Title }}
             </h1>
             {{/*  <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
                 {{ .Site.Params.Moto }}
             </h2>  */}}            
-            <ul class="pt-2">
+            <ul class="pt-2 pl-0">
               <li class="mr-4 inline-block">
                 <i class="fa-regular fa-circle-user mr-1"></i>
                 {{ $authors:= .Params.authors }}
@@ -101,7 +103,7 @@
             {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
           </div>
         {{ end }}  */}}
-        <div class="col-span-6">
+        <div class="md:col-start-4 md:col-span-2">
           {{ range .Resources }}
             {{ if eq .ResourceType "video" }}
                 {{/*  <video controls autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>  */}}
@@ -119,13 +121,13 @@
       <article class="lg:col-10">
         {{ range .Resources }}
           {{ if eq .ResourceType "video" }}
-              <video controls autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>
+              <video loop autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>
           {{ end }}
         {{ end }}
-        <div class="content mb-10">
+        <div class="content mb-10 text-2xl">
           {{ .Content }}
         </div>
-        <div class="row items-start justify-between">
+        {{/*  <div class="row items-start justify-between">
           <div class="lg:col-5 mb-10 flex items-center lg:mb-0">
             <h5 class="mr-3">{{ i18n "tags" }} :</h5>
             <ul>
@@ -144,17 +146,17 @@
           <div class="lg:col-4 flex items-center">
             {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" (i18n "share") "Whatsapp" false "Telegram" false) }}
           </div>
-        </div>
+        </div>  */}}
         <!-- comments -->
-        {{ if site.Config.Services.Disqus.Shortname }}
+        {{/*  {{ if site.Config.Services.Disqus.Shortname }}
           <div class="mt-20">
             {{ template "_internal/disqus.html" . }}
           </div>
-        {{ end }}
+        {{ end }}  */}}
       </article>
     </div>
     
-    <!-- Related posts -->
+    {{/*  <!-- Related posts -->
     {{ $related := (where site.RegularPages "Section" "in" site.Params.mainSections) | intersect (where site.RegularPages ".Title" "!=" .Title) | union (site.RegularPages.Related . ) }}
     {{ $related = $related | shuffle | first 3 }}
     {{ with $related }}
@@ -168,7 +170,7 @@
           {{ end }}
         </div>
       </div>
-    {{ end }}
+    {{ end }}  */}}
   </div>
 </section>
 {{ end }}
