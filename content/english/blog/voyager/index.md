@@ -1,5 +1,5 @@
 ---
-title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+title: "Voyager: An Open-Ended Embodied Agent with LLMs"
 meta_title: ""
 description: "We introduce Voyager, the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention."
 date: 2022-04-04T05:00:00Z

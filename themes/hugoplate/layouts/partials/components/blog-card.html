@@ -1,16 +1,15 @@
 <div class="bg-body dark:bg-darkmode-body">
+  <a href="{{ .RelPermalink }}">
   {{ range .Resources }}
   {{ if eq .ResourceType "video" }}
       <video loop autoplay src="{{ .RelPermalink }}" class="mb-3">Your browser does not support the video tag.</video>
   {{ end }}
   {{ end }}
+  </a>
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">
       {{ .Title }}
     </a>
   </h4>
   <p class="mb-6">{{ .Summary }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
-    {{ i18n "read_more" }}
-  </a>
 </div>
