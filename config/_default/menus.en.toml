@@ -6,15 +6,15 @@ name = "Home"
 url = "/"
 weight = 1
 
-[[main]]
-name = "About"
-url = "about/"
-weight = 2
+# [[main]]
+# name = "About"
+# url = "about/"
+# weight = 2
 
 [[main]]
 name = "Blog"
 url = "blog/"
-weight = 3
+weight = 2
 
 # [[main]]
 # name = "Elements"
@@ -27,12 +27,12 @@ weight = 3
 # hasChildren = true
 
 [[main]]
-weight = 4
+weight = 3
 name = "Authors"
 url = "authors/"
 
 [[main]]
-weight = 5
+weight = 4
 name = "Contact"
 url = "contact/"
 
