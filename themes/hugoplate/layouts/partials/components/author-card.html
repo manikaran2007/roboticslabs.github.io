@@ -1,5 +1,6 @@
 <div
   class="rounded p-8 text-center">
+  <a href="{{ .RelPermalink }}">
   {{ $image:= .Params.image }}
   {{ if $image }}
     {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "mx-auto mb-6 rounded" "size" "156x156") }}
@@ -11,6 +12,7 @@
       width="120"
       src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
   {{ end }}
+  </a>
   <h4 class="mb-3">
     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   </h4>
