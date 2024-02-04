@@ -67,6 +67,9 @@ module.exports = {
           "theme-light": theme.colors.darkmode.theme_color.theme_light,
           "theme-dark": theme.colors.darkmode.theme_color.theme_dark,
         },
+        backgroundImage: {
+          'light-mode-image': 'url("/images/homepage.jpg")',
+        },
       },
       fontSize: {
         base: font_base + "px",
