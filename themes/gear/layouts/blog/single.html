@@ -1,17 +1,30 @@
 {{ define "main" }}
 <style>
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .homepage {
-    display: flex;
-    background-position: center;
+    margin: 0;
+    padding: 0;
     height: 90vh;
     overflow: hidden;
-    align-items: center;
-    justify-content: center;
 }
+
+@media only screen and (max-width: 768px) {
+  /* Adjust the max-width value as needed for your mobile design */
+  .homepage {
+    height: 150vh;
+  }
+}
+
 </style>
 <section class="section pt-0">
-  <div class="text-left bg-gray-200 dark:bg-darkmode-theme-light pt-12 pb-10 mb-20 homepage">
-    <div class="max-w-[1650px] mx-auto px-6 md:px-12 lg:px-16 xl:px-16 2xl:px-20 pd-10 homepage_content">
+  <div class="text-left bg-gray-200 dark:bg-darkmode-theme-light pt-12 pb-10 mb-20 homepage center">
+    <div class="max-w-[1650px] mx-auto px-6 md:px-12 lg:px-16 xl:px-16 2xl:px-20 pd-10">
       <div class="grid gap-6 grid-cols-1 md:gap-6 md:grid-cols-5 lg:gap-8 lg:grid-cols-5 xl:gap-8 xl:grid-cols-5 2xl:gap-10 2xl:grid-cols-5">
         <div class="md:col-start-1 md:col-span-3 md:pr-8 xl:pr-16">
           <li class="mr-4 inline-block">
@@ -27,9 +40,9 @@
               </a>
             {{ end }}
           </li>
-            <h1 class="font-350 leading-tight text-gray-900 md:text-5xl xl:text-7xl dark:text-white pt-4 tracking-tighter 
+            <h1 class="font-350 leading-none text-gray-900 md:text-5xl xl:text-7xl dark:text-white tracking-tighter 
             text-4xl -ml-0.5 md:-ml-1 lg:text-7xl lg:-ml-1.5 lg:leading-[0.9em] xl:-ml-1.5 xl:leading-[0.9em] 
-            2xl:text-[5rem] 2xl:-ml-2 2xl:leading-[0.9em]" style="font-size: 4.5rem; line-height: 1; ">
+            2xl:text-[5rem] 2xl:-ml-2 2xl:leading-[0.9em]" style="font-size: 4.5rem;">
                 {{ .Title }}
             </h1>
             {{/*  <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
@@ -125,13 +138,13 @@
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row justify-center">
+  <div class="container pt-10">
+    <div class="row center">
 
       <article class="lg:col-10">
         {{ range .Resources }}
           {{ if eq .ResourceType "video" }}
-              <video loop autoplay src="{{ .RelPermalink }}" style="width: 100%; display: block;">Your browser does not support the video tag.</video>
+              <video loop autoplay src="{{ .RelPermalink }}" class="pt-4" style="width: 100%; display: block;">Your browser does not support the video tag.</video>
           {{ end }}
         {{ end }}
         <div class="content mb-10 text-2xl">

@@ -1,0 +1,240 @@
+<head>
+    <!--  Added for weibo metatags to deep Learning  template -->
+    <!--  End of weibo metatags to deep Learning template -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="NOODP,NOYDIR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="keywords"
+       content="official nvidia research, researchers, intern projects, nvidia interns, nvidia graduate fellows">
+    <meta name="description"
+       content="NVIDIA's world class researchers and interns work in areas such as AI, deep learning, parallel computing, and more. Explore what's new, learn about our vision of future exascale computing systems.">
+    <meta name="nv-pub-date" content="2023-06-19T11:36:00.000Z">
+    <meta property="og:site_name" content="NVIDIA">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://research.nvidia.com/labs/dir/">
+    <meta property="og:title" content="NVIDIA Deep Imagination Research Homepage">
+    <meta property="og:description"
+       content="NVIDIA's world class researchers and interns work in areas such as AI, deep learning, parallel computing, and more. Explore what's new, learn about our vision of future exascale computing systems.">
+    <meta property="og:image"
+       content="https://www.nvidia.com/content/dam/en-zz/Solutions/research/nvidia-arap-annoucement-social-1200x600-research-b.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NVIDIA">
+    <meta name="twitter:creator" content="@NVIDIA">
+    <meta name="twitter:title" content="NVIDIA Deep Imagination Research Homepage">
+    <meta name="twitter:url" content="https://research.nvidia.com/labs/dir/">
+    <meta name="twitter:description"
+       content="NVIDIA's world class researchers and interns work in areas such as AI, deep learning, parallel computing, and more. Explore what's new, learn about our vision of future exascale computing systems.">
+    <meta name="twitter:image"
+       content="https://www.nvidia.com/content/dam/en-zz/Solutions/research/nvidia-arap-annoucement-social-1200x600-research-b.jpg">
+    <meta property="fb:app_id" content="1679326302390196" />
+    <meta name="ps-key" content="1781-57d9f03d015405367a598032">
+    <meta name="ps-country" content="US" />
+    <meta name="ps-language" content="en" />
+    {{/*  <link rel="canonical" href="https://research.nvidia.com/labs/dir/">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script
+       src="https://www.nvidia.com/etc.clientlibs/clientlibs/granite/jquery.min.cee8557e8779d371fe722bbcdd3b3eb7.js"></script>
+    <script
+       src="https://www.nvidia.com/etc.clientlibs/clientlibs/granite/utils.min.4a192b590a2c2926fb000264370c0588.js"></script>
+    <script
+       src="https://www.nvidia.com/etc.clientlibs/foundation/clientlibs/shared.min.e9d9a3990d7779c2e8e3361187f3d36b.js"></script>
+    <script
+       src="https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs_foundation.min.026a51fcf3ffe653efd9f26b54a56ad6.js"></script>  */}}
+    {{/*  <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8"
+       data-domain-script="cd6dddcf-29a8-415b-b059-97252e5c048a" data-document-language="true"></script>  */}}
+    {{/*  <script>
+       function optanonWrapper() {
+       }
+    </script>
+    <script src="//assets.adobedtm.com/5d4962a43b79/96fada676f0e/launch-95431b44ee81.min.js"
+       data-ot-ignore="true"></script>  */}}
+    <!-- condition test for the old breakpoints to load defaulted to new breakpoints  -->
+    <link rel="stylesheet"
+       href="https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs_global_v2.min.9f8e71b58e474ab1ec83dade7e18105f.css"
+       type="text/css">
+    <!-- End of condition for the old breakpoints -->
+    <!-- Condition for whether clientlibs v3 is included -->
+    {{/*  <link rel="stylesheet"
+       href="https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs-deep-learning.min.1c9e4f354a94f48c150e253bc98adfbf.css"
+       type="text/css">  */}}
+    {{/*  <link rel="stylesheet"
+       href="https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs-locales.min.49234a64896bf33a5fa37485d66f0bb4.css"
+       type="text/css">  */}}
+
+    {{/*  <link href="style.css" rel="stylesheet" type="text/css" media="screen" />  */}}
+    {{/*  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>  */}}
+
+ </head>
+
+<header
+  class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
+  <nav class="navbar container">
+    <!-- logo -->
+    <div class="order-0">
+      <!-- navbar brand/logo -->
+      <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
+        {{ partial "logo" }}
+      </a>
+    </div>
+    <!-- navbar toggler -->
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Menu Open</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Menu Close</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    <!-- /navbar toggler -->
+
+    <!-- main navbar -->
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8">
+      {{ $currentPage := . }}
+      {{ range site.Menus.main }}
+        {{ $menuURL := .URL | absLangURL }}
+        {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+        {{ $active := eq $menuURL $pageURL }}
+        {{ if .HasChildren }}
+          <li class="nav-item nav-dropdown group relative">
+            <span
+              class="nav-link {{ range .Children }}
+                {{ $childURL := .URL | absLangURL }}
+                {{ $active := eq $childURL $pageURL }}
+                {{ if $active }}active{{ end }}
+              {{ end }} inline-flex items-center">
+              {{ .Name }}
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </span>
+            <ul
+              class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+              {{ range .Children }}
+                {{ $childURL := .URL | absLangURL }}
+                {{ $active := eq $childURL $pageURL }}
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link {{ if $active }}
+                      active
+                    {{- end -}}"
+                    {{ if findRE `^http` .URL }}
+                      target="_blank" rel="noopener"
+                    {{ end }}
+                    href="{{- if findRE `^#` .URL -}}
+                      {{- if not $.IsHome -}}
+                        {{- site.Home.RelPermalink -}}
+                      {{- end }}
+                      {{- .URL -}}
+                    {{- else -}}
+                      {{- .URL | relLangURL -}}
+                    {{- end -}}">
+                    {{ .Name }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+          </li>
+        {{ else }}
+          <li class="nav-item">
+            <a
+              class="nav-link {{ if $active }}active{{- end -}}"
+              {{ if findRE `^http` .URL }}
+                target="_blank" rel="noopener"
+              {{ end }}
+              href="{{- if findRE `^#` .URL -}}
+                {{- if not $.IsHome -}}
+                  {{- site.Home.RelPermalink -}}
+                {{- end }}{{- .URL -}}
+              {{- else -}}
+                {{- .URL | relLangURL -}}
+              {{- end -}}"
+              >{{ .Name }}</a
+            >
+          </li>
+        {{ end }}
+      {{ end }}
+      {{ if site.Params.navigation_button.enable }}
+        <li class="mt-4 inline-block lg:hidden">
+          <a
+            class="btn btn-outline-primary btn-sm"
+            href="{{ site.Params.navigation_button.link | relLangURL }}">
+            {{ site.Params.navigation_button.label }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+      {{ with site.Params.search }}
+        {{ if .enable }}
+          <button
+            aria-label="search"
+            class="border-border text-dark hover:text-primary dark:border-darkmode-border mr-5 inline-block border-r pr-5 text-xl dark:text-white dark:hover:text-darkmode-primary"
+            data-target="search-modal">
+            <i class="fa-solid fa-search"></i>
+          </button>
+        {{ end }}
+      {{ end }}
+
+      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-theme-light rounded") }}
+      {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
+
+
+      <!-- navigation btn -->
+      {{ if site.Params.navigation_button.enable }}
+        <a
+          href="{{ site.Params.navigation_button.link | relLangURL }}"
+          class="btn btn-outline-primary btn-sm hidden lg:inline-block">
+          {{ site.Params.navigation_button.label }}
+        </a>
+      {{ end }}
+    </div>
+  </nav>
+  <script>
+    var searchPath = document.getElementById("search-path");
+    searchPath.value = window.location.pathname;
+    NVIDIAGDC.funcQueue.addToQueue({
+       id: "navigation9929bf92_609c_4c9c_adda_3160e7ebea26",
+       method: "navigation-megamenu",
+       params: [{
+          globalSite: false,
+          breadCrumbAdded: false,
+          enableSearchLibrary: true,
+          searchOptions: {
+             destination: "http://research.nvidia.com/search/node/",
+             apiUrl: "",
+             triggerId: 'nvidia-search-box-link',
+             referenceId: 'nvidia-search-box-link'
+          }
+       }]
+    });
+
+    NVIDIAGDC.isBrandPage = true;
+    NVIDIAGDC.isMegaMenu = true;
+ </script>
+  <noscript>
+    <div class="no-js-warning">This site requires Javascript in order to view all its content. Please enable
+       Javascript in order to access all the functionality of this web site. Here are the <a
+          href="http://www.enable-javascript.com/" target="_blank">instructions how to enable JavaScript in your
+          web browser.</a></div>
+ </noscript>
+
+
+
+ <script
+    src="https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base_scripts.min.ddd74b44c8650c2172d3935ccd1b8621.js"></script>
+ <script
+    src="https://www.nvidia.com/etc/designs/nvidiaGDC/clientlibs-all.min.7075e0ae06b3abec219fdd580d8c3393.js"></script>
+
+</header>

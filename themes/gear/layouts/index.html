@@ -1,9 +1,16 @@
 {{ define "main" }}
 <style>
-  .homepage {
+.center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.homepage {
     margin: 0;
     padding: 0;
     height: 90vh;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -17,10 +24,10 @@
 </style>
 <!-- Banner -->
 {{ with .Params.banner }}
-<section class="section homepage bg-[url('/images/homepage.jpg')] bg-cover bg-center dark:bg-[url('/images/homepage_dark.jpg')]">
-   <div class="container homepage_content">
-      <div class="row justify-center">
-         <div class="lg:col-10 mb-8 text-center">
+<section class="section homepage bg-[url('/images/homepage.jpg')] bg-cover bg-center dark:bg-[url('/images/homepage_dark.jpg')] center">
+   <div class="container center">
+      <div class="text-center">
+         {{/*  <div class="lg:col-10 mb-8 text-center">  */}}
             <h1 class="mb-4 pt-14" style="font-size: 5rem;">
                {{ .title | markdownify }}
             </h1>
@@ -35,7 +42,7 @@
             </a>
             {{ end }}
             {{ end }}  */}}
-         </div>
+         {{/*  </div>  */}}
          {{/*  
          <div class="col-12">
             {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" ) }}
@@ -47,13 +54,13 @@
 {{ end }}
 <!-- /Banner -->
 <!-- /Features -->
-<section class="section-sm">
-   <div class="container">
+<section class="section-sm center">
+   <div class="container center">
       <div class="row">
          <div class="col-6 pb-8">
             <h3>Our Missions</h3>
          </div>
-         <div class="row">
+         <div class="row center">
             <div class="md:col-6 lg:col-4 mb-14">
                <div class="rounded p-8 text-center">
                   <img src="/images/robot.png" class=" mx-auto mb-6 rounded img" width="194" height="194">
@@ -93,7 +100,7 @@
 </section>
 <!-- /Testimonials -->
 <section class="section-sm">
-   <div class="container">
+   <div class="container center">
       <div class="row">
          <div class="col-6 pb-8">
             <h3>Recent Posts</h3>

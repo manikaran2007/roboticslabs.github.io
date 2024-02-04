@@ -36,6 +36,11 @@ weight = 4
 name = "Contact"
 url = "contact/"
 
+[[main]]
+weight = 5
+name = "NVIDIA Research"
+url = "https://www.nvidia.com/en-us/research/"
+
 # [[main]]
 # weight = 7
 # name = "Categories"
