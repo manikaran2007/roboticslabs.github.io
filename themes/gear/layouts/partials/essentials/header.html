@@ -223,7 +223,7 @@
 
 <body class="body-page theme-en-us theme-deeplearning  v4_design base_v4" data-edit-mode>
    <header id="main-header" class="header {{ if site.Params.navbar_fixed }}sticky top-0{{ end }} z-30">
-      <div class="navigation">
+      {{/*  <div class="navigation">
          <!-- SVG SYMBOL DEFINITIONS -->
          <svg xmlns="http://www.w3.org/2000/svg" class="hide" style="display: none;">
             <symbol id="n24-nvidia-logo" viewBox="0 0 108.472 20">
@@ -2444,9 +2444,9 @@
                class="menu-button-link menu-level-1" role="menuitem">Support</a>
          </li>
       </ul>
-      </div>
+      </div>  */}}
       <!-- Mega menu code ends -->
-      <div class="nav-tools-container">
+      {{/*  <div class="nav-tools-container">
          <ul class="nav-header-list" role="list" aria-label="Menu Tools">
             <div class="searchoverlay"></div>
             <li class="nav-header-item search-item" role="none">
@@ -2506,9 +2506,7 @@
                </a>
             </li>
          </ul>
-      </div>
-      </div>
-      </div>
+      </div>  */}}
       <!-- Mobile navigation starts -->
       {{/*  <div class="mobile-nav">
          <div class="nav-header">
@@ -4479,7 +4477,7 @@
       <div class="navbar container">
          <div class="order-0">
             <!-- navbar brand/logo -->
-            <a class="navbar-brand block" href="{{ site.Home.RelPermalink }}">
+            <a class="navbar-brand block" href="https://www.nvidia.com/research/">
                {{ partial "logo" }}
             </a>
          </div>

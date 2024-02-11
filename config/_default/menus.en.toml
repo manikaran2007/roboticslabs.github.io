@@ -11,10 +11,15 @@ weight = 1
 # url = "about/"
 # weight = 2
 
+# [[main]]
+# name = "Blog"
+# url = "blog/"
+# weight = 2
+
 [[main]]
-name = "Blog"
-url = "blog/"
-weight = 2
+name = "Publications"
+url = "publications/"
+weight = 3
 
 # [[main]]
 # name = "Elements"
@@ -27,19 +32,24 @@ weight = 2
 # hasChildren = true
 
 [[main]]
-weight = 3
-name = "Authors"
-url = "authors/"
+weight = 4
+name = "Team"
+url = "team/"
+
+# [[main]]
+# weight = 5
+# name = "Media"
+# url = "media/"
 
 [[main]]
-weight = 4
+weight = 6
 name = "Contact"
 url = "contact/"
 
-[[main]]
-weight = 5
-name = "NVIDIA Research"
-url = "https://www.nvidia.com/en-us/research/"
+# [[main]]
+# weight = 6
+# name = "NVIDIA Research"
+# url = "https://www.nvidia.com/en-us/research/"
 
 # [[main]]
 # weight = 7

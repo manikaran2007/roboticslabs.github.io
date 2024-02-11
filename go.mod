@@ -3,6 +3,9 @@ module hugoplate.netlify.app
 go 1.20
 
 require (
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-bootstrap/v5 v5.9.6 // indirect
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.1 // indirect
+	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-reveal v1.1.2 // indirect
 	github.com/gethugothemes/hugo-modules/accordion v0.0.0-20231227015948-b2308653c9e2 // indirect
 	github.com/gethugothemes/hugo-modules/adsense v0.0.0-20231227015948-b2308653c9e2 // indirect
 	github.com/gethugothemes/hugo-modules/components/cookie-consent v0.0.0-20231227015948-b2308653c9e2 // indirect

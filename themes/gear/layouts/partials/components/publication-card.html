@@ -1,0 +1,47 @@
+<div class="row mb-4">
+  <div class="lg:col-4 md:col-12">
+  <a href="{{ .Params.link }}">
+    {{ range .Resources }}
+    {{ if eq .ResourceType "video" }}
+        <video loop autoplay src="{{ .RelPermalink }}" class="mb-3">Your browser does not support the video tag.</video>
+    {{ end }}
+    {{ end }}
+  </a>
+  </div>
+  <div class="lg:col-8 md:col-12">
+    <h5 class="mb-3 md:pt-4 lg:pt-0">
+      <a href="{{ .Params.link }}">
+        {{ .Title }}
+      </a>
+    </h5>
+    <li class="mb-3 inline-block">
+      <i class="fa-regular fa-circle-user mr-1"></i>
+      {{ $authors:= .Params.authors }}
+      {{ range $i,$p:= $authors }}
+        {{ if ne $i 0 }}
+          {{ ", " }}
+        {{ end }}
+        {{ . }}
+      {{ end }}
+      {{/*  <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+        <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
+      </a>  */}}
+    </li>
+    <p class="mb-6"><i>{{ .Description }}</i></p>
+    <div style="position: relative; bottom: 0; left: 0; width: 100%;">
+    {{ range .Params.sources }}
+    <li class="inline-block">
+      <a
+        href="{{ .link | safeURL }}"
+        target="_blank"
+        class="mr-2 btn-sm-rd btn-grey"
+        rel="noopener nofollow">
+        <i class="{{ .icon }}"></i>
+        {{ .name }}
+      </a>
+    </li>
+    {{ end }}
+    </div>
+  </div>
+<hr>
+</div>

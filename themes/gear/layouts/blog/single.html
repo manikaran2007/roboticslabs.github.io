@@ -51,12 +51,12 @@
             <ul class="pt-2 pl-0">
               <li class="mr-4 inline-block">
                 <i class="fa-regular fa-circle-user mr-1"></i>
-                {{ $authors:= .Params.authors }}
-                {{ range $i,$p:= $authors }}
+                {{ $team:= .Params.team }}
+                {{ range $i,$p:= $team }}
                   {{ if ne $i 0 }}
                     {{ ", " }}
                   {{ end }}
-                  <a href="{{ `authors/` | relLangURL }}{{ . | urlize }}/">
+                  <a href="{{ `team/` | relLangURL }}{{ . | urlize }}/">
                     {{ . }}
                   </a>
                 {{ end }}

@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section">
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+      <div class="row gx-5">
+        <!-- blog posts -->
+          <div class="row center">
+            {{ $paginator:= .Paginate .RegularPages }}
+            {{ range $paginator.Pages }}
+                {{ partial "components/publication-card" . }}
+            {{ end }}
+          </div>
+          {{ partial "components/pagination.html" . }}
+        <!-- sidebar -->
+        {{/*  <div class="lg:col-4">
+          <!-- widget -->
+          {{ $widget:= site.Params.widgets.sidebar }}
+          {{ partialCached "widgets/widget-wrapper" ( dict "Widgets" $widget "Scope" . ) }}
+        </div>  */}}
+      </div>
+    </div>
+  </section>
+{{ end }}
