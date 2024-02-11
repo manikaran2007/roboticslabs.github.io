@@ -7,7 +7,7 @@ categories: []
 authors: ["Linxi 'Jim' Fan", "Guanzhi Wang", "Yunfan Jiang", "Ajay Mandlekar", "Yuncong Yang", "Haoyi Zhu", "Andrew Tang", "De-An Huang", "Yuke Zhu", "Anima Anandkumar"]
 tags: []
 draft: false
-link: https://eureka-research.github.io/
+link: https://minedojo.org/
 sources:
     - name: arxiv
       link: https://arxiv.org/abs/2206.08853
