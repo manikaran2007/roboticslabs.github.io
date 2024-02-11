@@ -2,11 +2,10 @@
 title: "Eureka: Human-Level Reward Design via Coding Large Language Models"
 meta_title: "Eureka"
 description: "GPT-4 writes reward functions to teach a 5-finger robot hand how to do extremely dexterous tasks like pen spinning."
-date: 2022-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
-categories: ["Technology", "Data"]
+date: 2023-10-20
+categories: []
 authors: ["Jason Ma", "William Liang", "Guanzhi Wang", "De-An Huang", "Osbert Bastani", "Dinesh Jayaraman", "Yuke Zhu", "Linxi 'Jim' Fan", "Anima Anandkumar"]
-tags: ["technology", "tailwind"]
+tags: []
 draft: false
 link: https://eureka-research.github.io/
 sources:
