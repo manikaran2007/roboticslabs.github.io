@@ -108,11 +108,13 @@
          <div class="col-6">
             <a href="/publications/" class="btn btn-primary float-right">Explore All</a>
          </div>
-         {{ $events := where .Site.RegularPages "Section" "publications" }}
+         {{ $events := where .Site.RegularPages "Section" "publications"}}
          {{ $recentRecordings := slice }}
          {{ $sortedRecentRecordings := sort $events "Params.date" "desc" }}
-         {{ range first 4 $sortedRecentRecordings }}
-         {{ partial "components/publication-card" . }}
+         {{ range $sortedRecentRecordings }}
+            {{ if .Params.selected }}
+            {{ partial "components/publication-card" . }}
+            {{ end }}
          {{ end }}
       </div>
    </div>

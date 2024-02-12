@@ -6,7 +6,7 @@ date: 2022-07-24
 categories: []
 authors: ["Linxi 'Jim' Fan", "Guanzhi Wang", "Yunfan Jiang", "Ajay Mandlekar", "Yuncong Yang", "Haoyi Zhu", "Andrew Tang", "De-An Huang", "Yuke Zhu", "Anima Anandkumar"]
 tags: []
-draft: false
+selected: true
 link: https://minedojo.org/
 sources:
     - name: arxiv

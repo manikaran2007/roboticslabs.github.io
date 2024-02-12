@@ -1,0 +1,39 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+
+  <section class="section pt-6">
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+      <div class="row">
+        <div class="col-6">
+          <h4>Open-Source Software & Data</h4>
+        </div>
+        <!-- media coverage -->
+        {{ range where .Site.RegularPages "Type" "software" }}
+        <div class="row center">
+          <article>
+            <div class="content mb-10">
+              {{ .Content }}
+            </div>
+          </article>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <div class="container" style="display: flex; justify-content: center; align-items: center;">
+      <div class="row">
+        <div class="col-6 pb-8">
+          <h4>Media Coverage (Selected)</h4>
+        </div>
+        <!-- media coverage -->
+          <div class="row center">
+            {{ $paginator2 := .Paginate (where .Pages "Type" "media")}}
+            {{ range $paginator2.Pages }}
+                {{ partial "components/media-card" . }}
+            {{ end }}
+          </div>
+          {{ partial "components/pagination.html" . }}
+      </div>
+    </div>
+  </section>
+{{ end }}

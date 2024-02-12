@@ -6,7 +6,7 @@ date: 2022-10-07
 categories: []
 authors: ["Yunfan Jiang", "Agrim Gupta", "Zichen 'Charles' Zhang", "Guanzhi Wang", "Yongqiang Dou", "Yanjun Chen", "Li Fei-Fei", "Anima Anandkumar", "Yuke Zhu", "Linxi 'Jim' Fan"]
 tags: []
-draft: false
+selected: true
 link: https://vimalabs.github.io/
 sources:
     - name: arxiv

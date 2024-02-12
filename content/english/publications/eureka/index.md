@@ -6,7 +6,7 @@ date: 2023-10-20
 categories: []
 authors: ["Jason Ma", "William Liang", "Guanzhi Wang", "De-An Huang", "Osbert Bastani", "Dinesh Jayaraman", "Yuke Zhu", "Linxi 'Jim' Fan", "Anima Anandkumar"]
 tags: []
-draft: false
+selected: true
 link: https://eureka-research.github.io/
 sources:
     - name: arxiv

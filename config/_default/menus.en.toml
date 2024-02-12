@@ -36,10 +36,10 @@ weight = 4
 name = "Team"
 url = "team/"
 
-# [[main]]
-# weight = 5
-# name = "Media"
-# url = "media/"
+[[main]]
+weight = 5
+name = "Research"
+url = "research/"
 
 [[main]]
 weight = 6
