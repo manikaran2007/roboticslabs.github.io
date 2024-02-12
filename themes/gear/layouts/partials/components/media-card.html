@@ -11,20 +11,20 @@
         <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
       </a>  */}}
     {{ if .Params.large_icon}}
-    <p class="mb-6 text-gray-300">{{ .Description }}</p>
+    <p class="mb-6 text-gray-500 dark:text-darkmode-text">{{ .Description }}</p>
     {{ end }}
   </div>
   
-  <div class="lg:col-4 md:col-12">
+  <div class="lg:col-4 md:col-12 mb-6">
     <a href="{{ .Params.link }}">
       {{ $image:= .Params.image }}
       {{ if $image }}
         {{ partial "image" (dict "Src" $image "Alt" .Title "Class" "w-full rounded") }}
       {{ end }}
     </a>
-    </div>
+  </div>
   {{ if not .Params.large_icon}}
-  <p class="mb-6 text-gray-300">{{ .Description }}</p>
+  <p class="mb-6 text-gray-500 dark:text-darkmode-text">{{ .Description }}</p>
   {{ end }}
 <hr>
 </div>

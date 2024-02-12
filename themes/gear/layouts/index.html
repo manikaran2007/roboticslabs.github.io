@@ -21,6 +21,29 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+    /* Use higher specificity to override styles from other_styles.css */
+    .homepage h1 {
+      margin-bottom: 16px; /* equivalent to mb-4 in Tailwind */
+      padding-top: 56px; /* equivalent to pt-14 in Tailwind */
+      font-size: 32px; /* equivalent to text-4xl in Tailwind */
+      margin-left: -0.5px; /* equivalent to -ml-0.5 in Tailwind */
+    }
+
+    /* Additional styles for larger screens (lg and above) */
+    @media (min-width: 1024px) {
+      .homepage h1 {
+        font-size: 56px; /* equivalent to lg:text-7xl in Tailwind */
+      }
+    }
+
+
+    /* Additional styles for larger screens (2xl and above) */
+    @media (min-width: 1560px) {
+      .homepage h1 {
+        font-size: 80px; /* equivalent to 2xl:text-[5rem] in Tailwind */
+      }
+    }
 </style>
 <!-- Banner -->
 {{ with .Params.banner }}
@@ -28,10 +51,10 @@
    <div class="container center">
       <div class="text-center">
          {{/*  <div class="lg:col-10 mb-8 text-center">  */}}
-            <h1 class="mb-4 pt-14" style="font-size: 5rem;">
+            <h1 class="mb-4 pt-14" style="font-size: 4rem;">
                {{ .title | markdownify }}
             </h1>
-            <p class="mb-8" style="font-size: 1.5rem;">
+            <p class="mb-8 text-xl -ml-0.5 md:-ml-1 lg:text-3xl">
                {{ .content | markdownify }}
             </p>
             {{/*  {{ with .button }}

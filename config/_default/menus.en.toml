@@ -31,10 +31,10 @@ weight = 3
 # name = "Pages"
 # hasChildren = true
 
-[[main]]
-weight = 4
-name = "Team"
-url = "team/"
+# [[main]]
+# weight = 4
+# name = "Team"
+# url = "team/"
 
 [[main]]
 weight = 5
