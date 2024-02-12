@@ -1,10 +1,10 @@
 ---
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
 meta_title: "MineDojo"
-description: "Large-scale open-ended agent learning framework in Minecraft."
+description: "NeurIPS 2022 Datasets and Benchmarks Track, November 2022"
 date: 2022-07-24
 categories: []
-authors: ["Linxi 'Jim' Fan", "Guanzhi Wang", "Yunfan Jiang", "Ajay Mandlekar", "Yuncong Yang", "Haoyi Zhu", "Andrew Tang", "De-An Huang", "Yuke Zhu", "Anima Anandkumar"]
+authors: [Linxi "Jim" Fan, "Guanzhi Wang*", "Yunfan Jiang*", "Ajay Mandlekar", "Yuncong Yang", "Haoyi Zhu", "Andrew Tang", "De-An Huang", "Yuke Zhu", "Anima Anandkumar"]
 tags: []
 selected: true
 link: https://minedojo.org/
@@ -29,5 +29,3 @@ sources:
       link: https://twitter.com/DrJimFan/status/1595459499732926464
       icon: "fa-brands fa-twitter"
 ---
-
-aa

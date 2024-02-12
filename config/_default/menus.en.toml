@@ -38,8 +38,8 @@ weight = 3
 
 [[main]]
 weight = 5
-name = "Research"
-url = "research/"
+name = "Media"
+url = "media/"
 
 [[main]]
 weight = 6

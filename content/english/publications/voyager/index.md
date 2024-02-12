@@ -1,11 +1,11 @@
 ---
 title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
 meta_title: "Voyager"
-description: "LLM-powered agent that masters Minecraft by in-context lifelong learning."
+description: "Technical report arXiv:2305.16291, May 2023"
 date: 2023-05-27
-categories: ["Large Language Model", "Agent"]
-authors: ["Guanzhi Wang", "Yuqi Xie", "Yunfan Jiang", "Ajay Mandlekar", "Chaowei Xiao", "Yuke Zhu", "Linxi 'Jim' Fan", "Anima Anandkumar"]
-tags: ["nextjs", "tailwind"]
+categories: []
+authors: ["Guanzhi Wang", "Yuqi Xie", "Yunfan Jiang*", "Ajay Mandlekar*", "Chaowei Xiao", "Yuke Zhu", Linxi "Jim" Fan, "Anima Anandkumar"]
+tags: []
 selected: true
 link: "https://voyager.minedojo.org/"
 sources:

@@ -30,20 +30,17 @@
       </a>  */}}
     </li>
     <p class="mb-6"><i>{{ .Description }}</i></p>
-    <div style="position: relative; bottom: 0; left: 0; width: 100%;">
+    
     {{ range .Params.sources }}
-    <li class="inline-block">
       <a
         href="{{ .link | safeURL }}"
         target="_blank"
-        class="mr-2 btn-sm-rd btn-grey"
+        class="mr-2 btn-sm-rd btn-grey mb-4"
         rel="noopener nofollow">
-        <i class="{{ .icon }}"></i>
+        <i class="{{ .icon }} mb-4"></i>
         {{ .name }}
       </a>
-    </li>
     {{ end }}
-    </div>
   </div>
   <hr>
 </div>

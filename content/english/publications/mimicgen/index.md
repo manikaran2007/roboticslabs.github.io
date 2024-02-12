@@ -1,10 +1,10 @@
 ---
 title: "MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations"
 meta_title: "Mimicgen"
-description: "An autonomous data generation system for robotics. Using just 200 human demos to generate a large multi-task dataset of 50K demos."
+description: "Conference on Robot Learning (CoRL), November 2023"
 date: 2023-10-27
 categories: []
-authors: ["Ajay Mandlekar", "Soroush Nasiriany", "Bowen Wen", "Iretiayo Akinola", "Yashraj Narang", "Linxi 'Jim' Fan", "Yuke Zhu", "Dieter Fox"]
+authors: ["Ajay Mandlekar", "Soroush Nasiriany", "Bowen Wen", "Iretiayo Akinola", "Yashraj Narang", Linxi "Jim" Fan, "Yuke Zhu", "Dieter Fox"]
 tags: []
 selected: false
 link: https://mimicgen.github.io/
@@ -25,5 +25,3 @@ sources:
       link: https://x.com/AjayMandlekar/status/1717907508046811294?s=20
       icon: "fa-brands fa-twitter"
 ---
-
-aa

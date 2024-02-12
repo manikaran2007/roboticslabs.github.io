@@ -1,5 +1,5 @@
 ---
 title: "Publications"
-meta_title: "projects"
-description: "publications from GEAR"
+meta_title: "Publications"
+description: "Publications from GEAR"
 ---

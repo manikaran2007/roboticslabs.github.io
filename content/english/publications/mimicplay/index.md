@@ -1,10 +1,10 @@
 ---
 title: "MimicPlay: Long-Horizon Imitation Learning by Watching Human Play"
 meta_title: "MimicPlay"
-description: "MimicPlay, an imitation learning algorithm that extracts the most signals from unlabeled human motions."
+description: "Conference on Robot Learning (CoRL), November 2023"
 date: 2023-11-03
 categories: []
-authors: ["Chen Wang", "Linxi 'Jim' Fan", "Jiankai Sun", "Ruohan Zhang", "Li Fei-Fei", "Danfei Xu", "Yuke Zhu", "Anima Anandkumar"]
+authors: ["Chen Wang", Linxi "Jim" Fan, "Jiankai Sun", "Ruohan Zhang", "Li Fei-Fei", "Danfei Xu", "Yuke Zhu", "Anima Anandkumar"]
 tags: []
 selected: false
 link: https://mimic-play.github.io/
@@ -25,5 +25,3 @@ sources:
       link: https://twitter.com/DrJimFan/status/1720491210383749136
       icon: "fa-brands fa-twitter"
 ---
-
-aa

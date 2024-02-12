@@ -1,10 +1,10 @@
 ---
 title: "VIMA: General Robot Manipulation with Multimodal Prompts"
 meta_title: "VIMA"
-description: "Multimodal LLM for robot manipulation; unifies diverse robotics tasks in a single prompting framework."
+description: "International Conference on Machine Learning (ICML), July 2023"
 date: 2022-10-07
 categories: []
-authors: ["Yunfan Jiang", "Agrim Gupta", "Zichen 'Charles' Zhang", "Guanzhi Wang", "Yongqiang Dou", "Yanjun Chen", "Li Fei-Fei", "Anima Anandkumar", "Yuke Zhu", "Linxi 'Jim' Fan"]
+authors: ["Yunfan Jiang", "Agrim Gupta*", Zichen "Charles" Zhang*, "Guanzhi Wang*", "Yongqiang Dou", "Yanjun Chen", "Li Fei-Fei", "Anima Anandkumar", "Yuke Zhu", Linxi "Jim" Fan]
 tags: []
 selected: true
 link: https://vimalabs.github.io/
