@@ -2,6 +2,7 @@
 title: "Bongard-HOI: Benchmarking Few-Shot Visual Reasoning for Human-Object Interactions"
 meta_title: "Bongard"
 description: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR), June 2022"
+highlight: Oral Presentation
 date: 2022-05-27
 categories: []
 authors: [Huaizu Jiang* , Xiaojian Ma*, Weili Nie, Zhiding Yu, Yuke Zhu, Anima Anandkumar]

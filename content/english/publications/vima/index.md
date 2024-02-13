@@ -2,6 +2,7 @@
 title: "VIMA: General Robot Manipulation with Multimodal Prompts"
 meta_title: "VIMA"
 description: "International Conference on Machine Learning (ICML), July 2023"
+highlight: 
 date: 2022-10-07
 categories: []
 authors: ["Yunfan Jiang", "Agrim Gupta*", Zichen "Charles" Zhang*, "Guanzhi Wang*", "Yongqiang Dou", "Yanjun Chen", "Li Fei-Fei", "Anima Anandkumar", "Yuke Zhu", Linxi "Jim" Fan]
@@ -34,5 +35,3 @@ sources:
       icon: "fas fa-database"
 
 ---
-
-aa

@@ -1,4 +1,4 @@
-<div class="row mb-6">
+<div class="row mb-6 pub-item {{ range .Params.tags }}{{ . }} {{ end }}">
   <div class="lg:col-4 md:col-12">
   <a href="{{ .Params.link }}">
     {{ range .Resources }}
@@ -29,9 +29,14 @@
         <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
       </a>  */}}
     </li>
-    <p class="mb-6"><i>{{ .Description }}</i></p>
-    
+    <p class="mb-3"><i>{{ .Description }}</i></p>
+    {{ $highlight:= .Params.highlight }}
+    {{ if $highlight }}
+      <p class="mb-3 text-red-500">{{ $highlight }}</p>
+    {{ end }}
+
     {{ range .Params.sources }}
+    <li class="mb-3 inline-block">
       <a
         href="{{ .link | safeURL }}"
         target="_blank"
@@ -40,6 +45,7 @@
         <i class="{{ .icon }} mb-4"></i>
         {{ .name }}
       </a>
+    </li>
     {{ end }}
   </div>
   <hr>

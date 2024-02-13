@@ -2,10 +2,11 @@
 title: "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge"
 meta_title: "MineDojo"
 description: "NeurIPS 2022 Datasets and Benchmarks Track, November 2022"
+highlight: Outstanding Paper Award
 date: 2022-07-24
 categories: []
 authors: [Linxi "Jim" Fan, "Guanzhi Wang*", "Yunfan Jiang*", "Ajay Mandlekar", "Yuncong Yang", "Haoyi Zhu", "Andrew Tang", "De-An Huang", "Yuke Zhu", "Anima Anandkumar"]
-tags: []
+tags: [Foundation Models]
 selected: true
 link: https://minedojo.org/
 sources:

@@ -2,6 +2,7 @@
 title: "SECANT: Self-Expert Cloning for Zero-Shot Generalization of Visual Policies"
 meta_title: "SECANT"
 description: "International Conference on Machine Learning (ICML), July 2021"
+highlight: 
 date: 2021-07-18
 categories: []
 authors: [Linxi "Jim" Fan , Guanzhi Wang, De-An Huang, Zhiding Yu, Li Fei-Fei, Yuke Zhu, Animashree Anandkumar]

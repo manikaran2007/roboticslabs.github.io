@@ -2,10 +2,11 @@
 title: "ACID: Action-Conditional Implicit Visual Dynamics for Deformable Object Manipulation"
 meta_title: "ACID"
 description: "Robotics: Science and Systems (RSS), June 2022"
+highlight: Best Student Paper Award Finalist
 date: 2022-03-13
 categories: []
 authors: [Bokui Shen, Zhenyu Jiang, Christopher Choy, Silvio Savarese, Leonidas J. Guibas, Anima Anandkumar, Yuke Zhu]
-tags: []
+tags: [Robotics, CV]
 selected: false
 link: https://b0ku1.github.io/acid/
 sources:

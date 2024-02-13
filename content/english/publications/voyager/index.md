@@ -2,10 +2,11 @@
 title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
 meta_title: "Voyager"
 description: "Technical report arXiv:2305.16291, May 2023"
+highlight: 
 date: 2023-05-27
 categories: []
 authors: ["Guanzhi Wang", "Yuqi Xie", "Yunfan Jiang*", "Ajay Mandlekar*", "Chaowei Xiao", "Yuke Zhu", Linxi "Jim" Fan, "Anima Anandkumar"]
-tags: []
+tags: [LLM, Agent, ]
 selected: true
 link: "https://voyager.minedojo.org/"
 sources:

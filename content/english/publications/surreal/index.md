@@ -2,6 +2,7 @@
 title: "SURREAL: Open-Source Reinforcement Learning Framework and Robot Manipulation Benchmark"
 meta_title: "SURREAL"
 description: "Conference of Robotic Learning (CoRL), October 2018"
+highlight: 
 date: 2018-10-24
 categories: []
 authors: [Linxi "Jim" Fan, Yuke Zhu, Jiren Zhu, Zihua Liu, Orien Zeng, Anchit Gupta, Joan Creus-Costa, Silvio Savarese, Li Fei-Fei]

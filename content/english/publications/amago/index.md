@@ -2,6 +2,7 @@
 title: "AMAGO: Scalable In-Context Reinforcement Learning for Adaptive Agents"
 meta_title: "Amago"
 description: "International Conference on Learning Representations (ICLR), May 2024"
+highlight: Spotlight Presentation
 date: 2024-02-08
 categories: []
 authors: ["Jake Grigsby", Linxi "Jim" Fan, "Yuke Zhu"]

@@ -2,6 +2,7 @@
 title: "MimicPlay: Long-Horizon Imitation Learning by Watching Human Play"
 meta_title: "MimicPlay"
 description: "Conference on Robot Learning (CoRL), November 2023"
+highlight: Best Paper Award Finalist
 date: 2023-11-03
 categories: []
 authors: ["Chen Wang", Linxi "Jim" Fan, "Jiankai Sun", "Ruohan Zhang", "Li Fei-Fei", "Danfei Xu", "Yuke Zhu", "Anima Anandkumar"]

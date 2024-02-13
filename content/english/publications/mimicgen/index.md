@@ -2,6 +2,7 @@
 title: "MimicGen: A Data Generation System for Scalable Robot Learning using Human Demonstrations"
 meta_title: "Mimicgen"
 description: "Conference on Robot Learning (CoRL), November 2023"
+highlight: 
 date: 2023-10-27
 categories: []
 authors: ["Ajay Mandlekar", "Soroush Nasiriany", "Bowen Wen", "Iretiayo Akinola", "Yashraj Narang", Linxi "Jim" Fan, "Yuke Zhu", "Dieter Fox"]
